@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #171717;
+}
+:root{
+    --twitter-shadow-color: #00acee;
+    --facebook-shadow-color: #1877f2;
+    --pinterest-shadow-color: #e92f38;
+    --dribbble-shadow-color: #ea4c89;
+    --github-shadow-color: #f5f5f5;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.icons{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.icons li{
+    margin: 3rem;
+    cursor: pointer;
+}
+.icons li i{
+    font-size: 50px;
+    color: #ffffff;
+    text-shadow: 
+    0 0 5px #7bacff,
+    0 0 10px #7bacff,
+    0 0 20px #7bacff,
+    0 0 50px #7bacff;
+    transition: 0.5s;
+}
+.icons li:nth-child(1) i:hover{
+    text-shadow: 
+    0 0 5px var(--pinterest-shadow-color),
+    0 0 10px var(--pinterest-shadow-color),
+    0 0 20px var(--pinterest-shadow-color),
+    0 0 40px var(--pinterest-shadow-color),
+    0 0 80px var(--pinterest-shadow-color),
+    0 0 120px var(--pinterest-shadow-color),
+    0 0 150px var(--pinterest-shadow-color);
+}
+
+.icons li:nth-child(2) i:hover{
+    text-shadow: 
+    0 0 5px var(--twitter-shadow-color),
+    0 0 10px var(--twitter-shadow-color),
+    0 0 20px var(--twitter-shadow-color),
+    0 0 40px var(--twitter-shadow-color),
+    0 0 80px var(--twitter-shadow-color),
+    0 0 120px var(--twitter-shadow-color),
+    0 0 150px var(--twitter-shadow-color);
+}
+
+
+.icons li:nth-child(3) i:hover{
+    text-shadow: 
+    0 0 5px var(--facebook-shadow-color),
+    0 0 10px var(--facebook-shadow-color),
+    0 0 20px var(--facebook-shadow-color),
+    0 0 50px var(--facebook-shadow-color),
+    0 0 100px var(--facebook-shadow-color),
+    0 0 150px var(--facebook-shadow-color);
+}
+
+
+.icons li:nth-child(4) i:hover{
+    text-shadow: 
+    0 0 5px var(--dribbble-shadow-color),
+    0 0 10px var(--dribbble-shadow-color),
+    0 0 20px var(--dribbble-shadow-color),
+    0 0 50px var(--dribbble-shadow-color),
+    0 0 100px var(--dribbble-shadow-color),
+    0 0 150px var(--dribbble-shadow-color);
+}
+
+
+.icons li:nth-child(5) i:hover{
+    color: #333;
+    text-shadow: 
+    0 0 5px var(--github-shadow-color),
+    0 0 10px var(--github-shadow-color),
+    0 0 20px var(--github-shadow-color),
+    0 0 50px var(--github-shadow-color),
+    0 0 100px var(--github-shadow-color),
+    0 0 150px var(--github-shadow-color);
+}
